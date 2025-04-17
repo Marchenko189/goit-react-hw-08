@@ -1,0 +1,58 @@
+body {
+  background-color: #1e1e1e;
+  /* Темний фон для всього тіла сторінки */
+  color: white;
+  /* Білий текст за замовчуванням */
+  font-family: 'Arial', sans-serif;
+  /* Шрифт для всього додатка */
+  padding: 0;
+  box-sizing: border-box;
+  /* Переконатися, що сторінка займає всю висоту */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ff7f00;
+  /* Помаранчевий для заголовків */
+}
+
+a {
+  color: #ff7f00;
+  /* Помаранчевий колір для посилань */
+  text-decoration: none;
+  /* Без підкреслення */
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Підкреслення на ховер */
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  /* Прибрати стандартний фокус */
+}
+
+p {
+  margin: 0;
+}
+
+/* Додатково можна налаштувати стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    /* Зменшити шрифт на малих екранах */
+  }
+
+  .container {
+    padding: 10px;
+  }
+}

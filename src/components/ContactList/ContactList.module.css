@@ -1,0 +1,42 @@
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Максимальна ширина для списку */
+}
+
+.list .icon {
+    color: #ff7f00;
+    /* Помаранчевий колір для іконок */
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.list .text {
+    font-size: 16px;
+}
+
+.list .button {
+    background-color: #ff7f00;
+    /* Помаранчевий фон для кнопки */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.list .button:hover {
+    background-color: #e67500;
+    /* Темніший помаранчевий на ховер */
+}
+
+.list .error {
+    color: #ff4d4d;
+    /* Червоний колір для помилок */
+    font-size: 12px;
+}
