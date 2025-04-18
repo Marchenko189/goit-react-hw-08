@@ -1,0 +1,33 @@
+.container::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    background-image: url(../../image/phonebook.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 97vh;
+    filter: blur(5px);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 48px;
+    background-color: rgba(255, 127, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 24px 36px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

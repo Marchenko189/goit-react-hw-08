@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background-image: url(../../image/phone.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93vh;
+}
+
+.title {
+    font-size: 48px;
+    width: 100vw;
+    background-color: rgba(255, 127, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 24px 36px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

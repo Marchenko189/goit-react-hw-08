@@ -1,0 +1,43 @@
+.form {
+    width: 400px;
+    margin: auto;
+    background-color: rgba(42, 42, 42, 0.8);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+}
+
+.label {
+    display: block;
+    font-size: 14px;
+    height: 80px;
+}
+
+.field {
+    margin-bottom: 8px;
+}
+
+.btn {
+    background-color: #ff7f00;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #e67500;
+}
+
+.error {
+    display: block;
+    color: #ff4d4d;
+    font-size: 12px;
+}

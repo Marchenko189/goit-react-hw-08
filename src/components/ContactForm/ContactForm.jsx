@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { addContact } from '../../redux/contactsOps';
+import { addContact } from '../../redux/contacts/operations';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import css from "./ContactForm.module.css";
 import * as yup from 'yup';
@@ -29,18 +29,15 @@ export default function ContactForm() {
             onSubmit={handleSubmit}
         >
             <Form className={css.form}>
-            <div className={css.container}>
-            <label className={css.label} htmlFor="username">Name</label>
-            <Field className={css.input} id="username" name="name" type="text"></Field>
-            <ErrorMessage className={css.error} name="name" component="span"></ErrorMessage>
-            </div>
+                <label className={css.label} htmlFor="username">Name
+                    <Field className={css.input} id="username" name="name" type="text"></Field>
+                    <ErrorMessage className={css.error} name="name" component="span"></ErrorMessage>
+                </label>
             
-            <div className={css.container}>
-            <label className={css.label} htmlFor="number">Number</label>
-            <Field className={css.input} id="number" name="number" type="text"></Field> 
-            <ErrorMessage className={css.error} name="number" component="span"></ErrorMessage>  
-            </div>
-            
+                <label className={css.label} htmlFor="number">Number
+                    <Field className={css.input} id="number" name="number" type="text"></Field> 
+                    <ErrorMessage className={css.error} name="number" component="span"></ErrorMessage>
+                </label>  
                 <button className={css.button}type="submit">Add contact</button> 
                
         </Form>

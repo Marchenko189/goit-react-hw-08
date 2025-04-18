@@ -1,5 +1,7 @@
-import css from './Loader.module.css';
+import { FadeLoader } from 'react-spinners';
+import css from "./Loader.module.css";
+
 
 export default function Loader() {
-  return <p className={css.loading}>Loading...</p>;
+  return <FadeLoader className={css.loading} color="#ff7f00" size={100} />
 }

@@ -4,6 +4,7 @@ body {
   color: white;
   /* Білий текст за замовчуванням */
   font-family: 'Arial', sans-serif;
+  margin: 0;
   /* Шрифт для всього додатка */
   padding: 0;
   box-sizing: border-box;

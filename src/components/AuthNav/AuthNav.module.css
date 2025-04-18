@@ -1,0 +1,30 @@
+.link {
+    display: block;
+    width: 150px;
+    border: none;
+    padding: 16px 15px;
+    margin-right: 4px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    opacity: 0.9;
+}
+
+.link:hover {
+    background-color: #e67500;
+    text-decoration: none;
+}
+
+.link:last-child {
+    margin-right: 0;
+}
+
+
+.container {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+}
